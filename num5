@@ -1,0 +1,9 @@
+n, sequence = int(input()), []
+
+for i in range(1, n + 1):
+    repeat = min(n, i)
+    n -= repeat
+    sequence += [i] * repeat
+    if n <= 0:
+        break
+print(*sequence)
