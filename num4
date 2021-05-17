@@ -1,0 +1,12 @@
+numb = [int(i) for i in input().split()]
+neigh_sum = []
+ 
+for i in range(len(numb) - 1):
+    #первое вхождение i - нулевое. i-1 позволяет обратиться к списку с конца, ведь получается -1
+    if i < len(numb):
+        neigh_sum.append(numb[i - 1] + numb[i + 1])
+#Здесь цикл проскакивал в конец, пришлось прикостылить его для выполнения суммы последнего с нулевым элементов
+else:
+    neigh_sum.append(numb[i] + numb[0])
+        
+print(*neigh_sum)
