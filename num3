@@ -1,0 +1,30 @@
+from random import randint
+
+class Cat:
+    def kittens(gender):
+        countf, countm = 0, 0
+        for i in range(gender + 1):
+            l_digits.append(randint(0, 1))
+            if l_digits[i] == 0:
+                l_kitten_gender.append('самка')
+                countf += 1
+            elif l_digits[i] == 1:
+                l_kitten_gender.append('самец')
+                countm += 1
+    
+    def male():
+        return l_kitten_gender.count('самец')
+    def female():
+        return l_kitten_gender.count('самка')
+    
+#данные
+n = int(input())
+l_digits, l_kitten_gender = [], []
+
+#вызов
+Cat.kittens(n)
+print('Котята-самцы:', Cat.male())
+print('Котята-самки:', Cat.female())
+#следующая строка бонусом из-за перемудрёности сверху :)
+print('Все котята:', end=' ')
+print(*l_kitten_gender, sep=',')
