@@ -1,0 +1,11 @@
+def modify_list(row):
+    #переворачиваю диапазон, потому что при удалении позиций в списке номера сдигаются к нулю
+    for i in reversed(range(len(row))):
+        if row[i]%2 == 0:
+            row[i] = row[i]//2
+        else:
+            del row[i]
+ 
+digits = [10, 5, 8, 3]
+modify_list(digits)
+print(digits)
