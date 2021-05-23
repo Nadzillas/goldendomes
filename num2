@@ -1,9 +1,0 @@
-list = ['Яблоки', 200, 50, 'Вода', 35001, 'Хлеб', 6, 10, 'Яйца', 8, 1, 4]
-list_str = [str(i) for i in list]
-digits = []
-
-def auth(n):
-    for i in list_str:
-        if i.isdigit() == True:
-            digits.append(i)
-auth(list_str), print(digits)

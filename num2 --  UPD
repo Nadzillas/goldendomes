@@ -1,0 +1,9 @@
+  
+list = 'Яблоки, 200, Вода, 35001, Хлеб, 6, 10, Яйца, 8, 1'
+list2, digits = list.split(', '), []
+
+def auth(n):
+    for i in list2:
+        if i.isalpha() == False:
+            digits.append(i)
+auth(list2), print(digits)
