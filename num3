@@ -18,11 +18,10 @@ class Cat:
         return l_kitten_gender.count('самка')
     
 #данные
-n = int(input())
 l_digits, l_kitten_gender = [], []
 
 #вызов
-Cat.kittens(n)
+Cat.kittens(int(input()))
 print('Котята-самцы:', Cat.male())
 print('Котята-самки:', Cat.female())
 #следующая строка бонусом из-за перемудрёности сверху :)
